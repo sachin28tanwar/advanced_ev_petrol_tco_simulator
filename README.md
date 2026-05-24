@@ -1,5 +1,7 @@
 # Advanced EV vs. Petrol TCO Simulator (EnergyVerse ⚡)
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://advancedevpetroltcosimulator-md7gj3txjvdjsdohwqvaug.streamlit.app/)
+
 ## Project Overview
 This project is an **Advanced EV vs. Petrol TCO (Total Cost of Ownership) Simulator**. It is a deep-dive simulator accounting for inflation, maintenance, insurance, and battery degradation to model cumulative cost trajectories over years of ownership.
 
