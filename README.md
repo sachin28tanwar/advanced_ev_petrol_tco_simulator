@@ -2,31 +2,23 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://advancedevpetroltcosimulator-md7gj3txjvdjsdohwqvaug.streamlit.app/)
 
-## Project Overview
-This project is an **Advanced EV vs. Petrol TCO (Total Cost of Ownership) Simulator**. It is a deep-dive simulator accounting for inflation, maintenance, insurance, and battery degradation to model cumulative cost trajectories over years of ownership.
+## Overview
+This application is an interactive Total Cost of Ownership (TCO) simulator built with Python and Streamlit. It is designed to help users accurately compare the long-term financial impact of owning an Electric Vehicle (EV) versus a traditional Petrol car[cite: 1]. Instead of just calculating basic fuel savings, the engine models real-world economic variables including compound inflation, yearly maintenance, insurance premiums, and the major edge-case cost of EV battery replacement[cite: 1].
 
-It is part of the **EnergyVerse** ecosystem: a full-stack data analytics platform designed to monitor, predict, and optimize a modern city's energy ecosystem. As urban environments grow, managing power efficiently becomes critical. This project tackles city-wide energy challenges by transforming raw energy data into actionable insights for citizens, grid operators, and city planners.
+---
 
-## Project Structure
-EnergyVerse is divided into three distinct modules scaled by technical complexity (Easy, Medium, and Hard). While each module focuses on a different urban energy problem, they all share a unified technical pipeline:
-* **Data Processing:** SQL is used to extract, aggregate, and analyze large-scale urban datasets.
-* **Predictive Analytics:** Machine Learning models are deployed to forecast demand, detect anomalies, or optimize resources.
-* **Interactive UI:** Streamlit web applications serve as the front-end, turning complex models into user-friendly, interactive dashboards.
+## Key Features[cite: 1]
+* **Interactive Commute Profiling:** Users can adjust their expected daily commute distances and total years of ownership to match their personal lifestyle[cite: 1].
+* **Dynamic Economic Parameters:** Simulates the compounding impact of annual inflation rates for both petrol and electricity over the ownership period[cite: 1].
+* **Battery Replacement Logic:** Explicitly factors in the year and cost of replacing an EV battery, preventing skewed data and providing a realistic long-term cost trajectory[cite: 1].
+* **Visual Cost Trajectory:** Automatically generates a line chart using Pandas and Streamlit to illustrate the cumulative cost comparison year-by-year[cite: 1].
+* **Clear Financial Verdict:** Calculates the final total costs and displays a bold bottom-line result, showing exactly how much money is saved and which vehicle type is the better financial choice[cite: 1].
 
-## The Three Modules
-1. **Level 1 (Foundational Analysis):** Focuses on historical consumption and benchmarking. Example: Tracking residential energy usage and calculating the municipal carbon footprint.
-2. **Level 2 (Predictive Modeling):** Focuses on forecasting and anomaly detection. Example: Predicting peak grid loads to prevent outages or assessing neighborhood solar potential. 
-3. **Level 3 (System Optimization - This Simulator):** Focuses on dynamic, real-time resource allocation and economic simulations. Example: Optimizing the charging schedules for public EV fleets, simulating automated load-shedding during extreme weather crises, or modeling the total cost of ownership (TCO) comparison.
+---
 
-## How to Run the Simulator
-1. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Start the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
+## Dependencies[cite: 1]
+To run this application, you must have Python installed along with the following libraries[cite: 1]:
+* `streamlit`[cite: 1]
+* `pandas`[cite: 1]
 
-## Core Objective
-To demonstrate a complete end-to-end data science workflow—from database management to machine learning deployment—while providing practical, data-driven solutions for sustainable urban energy management.
+---
